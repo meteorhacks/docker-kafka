@@ -8,7 +8,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 EXPOSE 9092 7203
 
-VOLUME ["/opt/kafka/config", "/tmp/kafka-logs"]
+VOLUME ["/opt/kafka/config/server.properties", "/tmp/kafka-logs"]
 
 WORKDIR /opt/kafka/bin
 ENTRYPOINT ["./kafka-server-start.sh"]
